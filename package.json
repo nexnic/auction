@@ -4,7 +4,9 @@
   "description": "This is auction site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bundler build index.html",
+    "watch": "bundler build --watch index.html",
+    "start": "bundler index.html --open"
   },
   "author": "Kent Erik Hole",
   "license": "ISC",

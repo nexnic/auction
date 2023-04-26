@@ -4,8 +4,8 @@
   "description": "This is auction site",
   "main": "index.js",
   "scripts": {
-    "build": "bundler build index.html",
-    "watch": "bundler build --watch index.html",
+    "build": "bundler public index.html",
+    "watch": "bundler public --watch index.html",
     "start": "bundler index.html --open"
   },
   "author": "Kent Erik Hole",

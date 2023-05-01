@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
     <title>Herodotus | Home</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="./public/image/Herodotus-logo-white.png">
     <!-- Script -->
     <script src="./src/js/index.js" defer type="module"></script>
     <!-- CSS -->
@@ -15,50 +17,40 @@
     <script src="https://kit.fontawesome.com/6b4917e13e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- TopBar nav -->
-    <nav class="d-flex p-3 justify-content-between bg-dark ">
-        <button type="button" id="btn__nav--register" class="btn btn-small">Register user</button>
-    </nav>
-
-    <header>
-        <div id="header__home" class="d-flex flex-column p-3">
-            <div class="text-center" >
-                <h1>
-                    <span class="headline__main">
-                        Herodotus
-                    </span>
-                </br>
-                    <span class="headline__sub">
-                        Welcome to our auction website, where you can buy and sell a wide range of products and services through a transparent and competitive bidding process.
-                    </span>
-                </h1>
-            </div>
-            <button type="button" class="btn btn-secondary">
-                Register user
-            </button>
-            <div class="d-flex justify-content-center" id="header__home--image">
-                <img src="./public/image/herodotus_2.png" alt="img one">
-                <img src="./public/image/herodotus_1.png" alt="img two">
-            </div>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <img src="./public/image/Herodotus-logo-white.png" alt="Herodotus Logo">
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page" id="btn__home">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white" id="btn__profile">
+                <i class="fa-solid fa-user-group"></i>
+                Profiles
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="./public/image/Default_profile.svg" alt="Profile_image" style="width: 50px;">
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
         </div>
-        
-    </header>
-    <main>
-    </main>
-    <nav  class="d-flex p-3 justify-content-between fixed-bottom bg-dark" id="nav__mobil--buttom">
-        <button class="btn">
-            test
-        </button>
-        <button class="btn">
-            <i class="fa-solid fa-house"></i>
-        </button>
-        <button class="btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <button class="btn">
-            <i class="fa-solid fa-filter"></i>
-        </button>
-    </nav>
+      </div>
     <!-- Bootsrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

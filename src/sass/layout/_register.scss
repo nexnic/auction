@@ -4,4 +4,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__container {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: black 2px solid;
+        box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 14px 0px rgba(0,0,0,0.75);
+    }
 }
+

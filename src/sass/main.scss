@@ -21,10 +21,17 @@
     // Components 
         // Buttons 
             @import "./components/button";
+        // form 
+            @import "./components/form";
     
     // Layout 
         // Header
             @import "./layout/header";
+        // Loading 
+            @import "./layout/loading";
+        // Register 
+            @import "./layout/register";
+        
 
     // Pages
         // Home

@@ -21,5 +21,16 @@
         }
 
     // Heading
+
+    .headline {
+        &__main{ 
+            font-family: 'poppis-blod';
+            font-size: 2rem;
+        }
+        &__sub {
+            font-family: 'poppis-regular';
+            font-size: 1.2rem;
+        }
+    }
     
     // Paragraph

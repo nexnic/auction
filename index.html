@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <!-- Title -->
     <title>Herodotus | Home</title>
     <!-- Icon -->
@@ -17,46 +18,122 @@
     <script src="https://kit.fontawesome.com/6b4917e13e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-          <img src="./public/image/Herodotus-logo-white.png" alt="Herodotus Logo">
-        </a>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page" id="btn__home">
-                <i class="fa-solid fa-house"></i>
-                Home
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white" id="btn__profile">
-                <i class="fa-solid fa-user-group"></i>
-                Profiles
-            </a>
-          </li>
-        </ul>
-        <hr>
-        <div class="dropdown">
-          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./public/image/Default_profile.svg" alt="Profile_image" style="width: 50px;">
-            <strong>mdo</strong>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul>
+    <div class="wrapper bg-secondary">
+        <nav id="nav__sidebar">
+            <div class="nav__sidebar--header">
+                <img src="./public/image/Herodotus-logo-white.png" alt="Image of logo Herodotus" style="width: 105px;">
+            </div>
+            <br>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle btn btn-small">
+                        <i class="fa-solid fa-house"></i> Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Test1</a>
+                        </li>
+                        <li>
+                            <a href="#">test1</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#test123" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle btn btn-small">
+                        <i class="fa-solid fa-user-group"></i> About
+                    </a>
+                    <ul class="collapse list-unstyled" id="test123">
+                        <li>
+                            <a href="#">test3</a>
+                        </li>
+                        <li>
+                            <a href="#">test4</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#test342" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle btn btn-small">
+                        <i class="fa-solid fa-gear"></i> Settings 
+                    </a>
+                    <ul class="collapse list-unstyled" id="test342">
+                        <li>
+                            <a href="#">test435</a>
+                        </li>
+                        <li>
+                            <a href="#">test355</a>
+                        </li>
+                    </ul>
+                </li>               
+            </ul>
+        </nav>
+    </div>
+    <!--
+    <section id="loading" class="bg-secondary">
+        <div class="p-3" id="loading__box">
+            <img src="./public/image/Herodotus-logo-white.png" alt="Logo of Herodotus" style="width: 100px;">
+            <h2 id="loading__box--main">Herodotus</h2>
+            <p id="loading__box--sub">Loading api...</p>
+            <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
         </div>
-      </div>
+    </section>
+    -->
+    <!-- 
+    <section id="register" class="bg-secondary">
+        <div id="register__container">
+            <form action="" id="form__register">
+                <input type="name" id="form__register--username" required>
+                <label for="name">FullName</label>
+                <input type="email" id="form__register--email" required>
+                <label for="email">Email</label>
+                <input type="password" id="form__register--password" required>
+                <label for="password">password</label>
+                <input type="url" name="avatar" id="form__register--avatar">
+                <label for="avatar">avatar</label>
+                <input type="url" name="banner" id="form__register--banner">
+                <label for="banner">Banner</label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+-->
+    
+    <!-- Popup Model -->
+    <div class="modal fade" id="popup-form-post" tabindex="1" role="dialog" aria-labelledby="popup-form-post" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="model-header">
+                    <h2></h2>
+                </div>
+                <div class="modal-body" id="modal-profile-body">
+                    <form action="" id="form__register">
+                        <input type="name" id="form__register--username" required>
+                        <label for="name">FullName</label>
+                        <input type="email" id="form__register--email" required>
+                        <label for="email">Email</label>
+                        <input type="password" id="form__register--password" required>
+                        <label for="password">password</label>
+                        <input type="url" name="avatar" id="form__register--avatar">
+                        <label for="avatar">avatar</label>
+                        <input type="url" name="banner" id="form__register--banner">
+                        <label for="banner">Banner</label>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer" id="modal-profile-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootsrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

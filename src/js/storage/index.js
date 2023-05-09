@@ -3,4 +3,6 @@
  * Index.js
  */
 
-import {GetLocalStage} from "./load";
+export * from "./load"
+export * from "./save"
+export * from "./remove"

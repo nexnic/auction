@@ -4,11 +4,12 @@
 
 /**
  * 
- * @param {*} Value1 
+ * @param {*} UserData 
  */
-export function GetLocalStage(Value1) {
+
+export const load = (UserData) => {
     try {
-        return JSON.parse(localStorage.getItem(Value1))
+        return JSON.parse(localStorage.getItem(UserData))
     } catch {
         return false
     }

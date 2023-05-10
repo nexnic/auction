@@ -31,7 +31,8 @@
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">Test1</a>
+                            <button data-toggle="modal" data-target="#popup-form-post">Register user</button>
+                            <a href="#" data-toggle="model" data-target="#popup-form-post">Register user</a>
                         </li>
                         <li>
                             <a href="#">test1</a>
@@ -61,16 +62,31 @@
                     </a>
                     <ul class="collapse list-unstyled" id="test342">
                         <li>
-                            <a href="#">test435</a>
+                            <a href="#" class="btn btn-small">
+                                <i class="fa-solid fa-envelope"></i>
+                                Change mail
+                            </a>
                         </li>
                         <li>
-                            <a href="#">test355</a>
+                            <a href="#" class="btn btn-small">
+                                <i class="fa-solid fa-image-portrait"></i>  
+                                Change Profile image
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-small">
+                                <i class="fa-solid fa-image"></i>   
+                                Change Banner img
+                            </a>
                         </li>
                     </ul>
                 </li>               
             </ul>
         </nav>
     </div>
+    <main>
+
+    </main>
     <!--
     <section id="loading" class="bg-secondary">
         <div class="p-3" id="loading__box">
@@ -104,7 +120,34 @@
 -->
     
     <!-- Popup Model -->
-    <div class="modal fade" id="popup-form-post" tabindex="1" role="dialog" aria-labelledby="popup-form-post" aria-hidden="true">
+    <div class="modal fade" id="popup-form-post" tabindex="-1" role="dialog" aria-labelledby="popup-form-post" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="model-header">
+                    <h2></h2>
+                </div>
+                <div class="modal-body" id="modal-profile-body">
+                    <form action="" id="form__register">
+                        <label for="name" class="form-label">FullName</label>
+                        <input type="name" class="form-control" id="form__register--username" placeholder="FullName" required>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-label" id="form__register--email" placeholder="email@domain.no" required>
+                        <label for="password" class="form-label">password</label>
+                        <input type="password" class="form-control" id="form__register--password" placeholder="**********" required>
+                        <label for="avatar" class="form-label">Profile Image</label>
+                        <input type="url" name="avatar" class="form-control" id="form__register--avatar" placeholder="Profile image">
+                        <label for="banner" class="form-label">Banner</label>
+                        <input type="url" name="banner" class="form-control" id="form__register--banner" Placeholder="Image banner">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer" id="modal-profile-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="popup-form-post" tabindex="-1" role="dialog" aria-labelledby="popup-form-post" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="model-header">

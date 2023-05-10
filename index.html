@@ -31,11 +31,11 @@
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <button data-toggle="modal" data-target="#popup-form-post">Register user</button>
+                            <button data-toggle="modal" data-target="#popup-form-post" class="btn">Register user</button>
                             <a href="#" data-toggle="model" data-target="#popup-form-post">Register user</a>
                         </li>
                         <li>
-                            <a href="#">test1</a>
+                            <button class="modal" data-target="#popup-form-post" class="btn">Login</button>
                         </li>
                     </ul>
                 </li>
@@ -147,30 +147,19 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="popup-form-post" tabindex="-1" role="dialog" aria-labelledby="popup-form-post" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="model-header">
-                    <h2></h2>
-                </div>
-                <div class="modal-body" id="modal-profile-body">
-                    <form action="" id="form__register">
-                        <input type="name" id="form__register--username" required>
-                        <label for="name">FullName</label>
-                        <input type="email" id="form__register--email" required>
-                        <label for="email">Email</label>
-                        <input type="password" id="form__register--password" required>
-                        <label for="password">password</label>
-                        <input type="url" name="avatar" id="form__register--avatar">
-                        <label for="avatar">avatar</label>
-                        <input type="url" name="banner" id="form__register--banner">
-                        <label for="banner">Banner</label>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-                <div class="modal-footer" id="modal-profile-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+    <div class="modal fade" id="modal__Login" tabindex="-1" role="dialog" aria-labelledby="modal__login" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2></h2>
+            </div>
+            <div class="model-body">
+                <form action="" method="get" id="form__login">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="form__login--email" required>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="form__login--password">
+                    <button type="submit" class="btn btn-small">Submit</button>
+                </form>
             </div>
         </div>
     </div>

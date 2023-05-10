@@ -1,5 +1,24 @@
 #form__register {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 
 }
+#form__login {
+    display: flex;
+    flex-direction: column;
+    gap:.4rem;
+}
+
+.form-label {
+    font-size: 1.3rem;
+    color: red($color: #f00606);
+}
+
+.form-control {
+    background-color: gray;
+}
+
+$input-bg: gray;
+$input-focus-bg: white;
+$form-label-color: red;

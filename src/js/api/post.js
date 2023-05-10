@@ -10,6 +10,6 @@ export async function feedpost(){
     })
     if(response.ok){
         const data = await response.json()
-        save('post' ,data)
+        save('feed' ,data)
     }
 }

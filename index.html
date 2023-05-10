@@ -31,11 +31,11 @@
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <button data-toggle="modal" data-target="#popup-form-post" class="btn">Register user</button>
-                            <a href="#" data-toggle="model" data-target="#popup-form-post">Register user</a>
+                            <button data-toggle="modal" data-target="#popup-form-post" class="btn btn-secondary">Register user</button>
+                            
                         </li>
                         <li>
-                            <button class="modal" data-target="#popup-form-post" class="btn">Login</button>
+                            <button data-toggle="model" data-target="#modal__Login" class="btn btn-secondary">Login</button>
                         </li>
                     </ul>
                 </li>
@@ -148,20 +148,23 @@
         </div>
     </div>
     <div class="modal fade" id="modal__Login" tabindex="-1" role="dialog" aria-labelledby="modal__login" aria-hidden="true">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2></h2>
-            </div>
-            <div class="model-body">
-                <form action="" method="get" id="form__login">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" name="email" class="form-control" id="form__login--email" required>
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" name="password" class="form-control" id="form__login--password">
-                    <button type="submit" class="btn btn-small">Submit</button>
-                </form>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2></h2>
+                </div>
+                <div class="model-body">
+                    <form action="" method="get" id="form__login">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" id="form__login--email" required>
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control" id="form__login--password">
+                        <button type="submit" class="btn btn-small">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
+        
     </div>
     <!-- Bootsrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

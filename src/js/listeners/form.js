@@ -7,6 +7,7 @@
 import {validatorUser, validatorEmail, validatorPWD } from '../tools/validator';
 import {AddClass} from '../tools/addclass';
 import {APIRegisterUser} from '../api/register';
+import {APILoginUser} from '../api/login';
 
 
 // DOM
@@ -20,7 +21,10 @@ import {APIRegisterUser} from '../api/register';
     const RegPwd = document.querySelector('#form__register--password')
     let regPwdDom = '#form__register--password';
     
+    // Login 
 
+    let LoginUser = document.querySelector('#form__login--email');
+    let LoginPWD = document.querySelector('#form__login--password');
     //  
 
 /**
@@ -62,4 +66,31 @@ export const RegUserForm = (event) => {
         AddClass(regPwdDom, 'is-invalid')
     }    
 }  
+
+// testkent@noroff.no
+
+export const LoginUserForm = (event) => {
+    event.preventDefault();
+    let userData = {
+        email: `${LoginUser.value}`,
+        password: `${LoginPWD.value}`
+    }
+
+    let CheckEmail = validatorEmail(userData.email)
+    let CheckPWD = validatorPWD(userData.password);
+    if(CheckEmail && CheckPWD) {
+        AddClass(regUserDom, 'is-valid')
+        LoginUser.classList.add('is-valid')
+        LoginPWD.classList.add('is-valid')
+        APILoginUser(userData)
+    }
+    if(!CheckEmail){
+        LoginUser.classList.add('is-invalid')
+        console.log('email', 'faile')
+    }
+    if(!CheckPWD){
+        LoginPWD.classList.add('is-invalid')
+        console.log('password', 'faile')
+    }
+}
 

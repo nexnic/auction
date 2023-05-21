@@ -1,0 +1,50 @@
+// Import file 
+
+    // Abstract
+        // Functions 
+            @import "./abstracts/function";
+        // Mixins
+            @import "./abstracts/mixins";
+        // Variables 
+            @import "./abstracts/variables";
+
+    // Base 
+        // Animations 
+            @import "./base/animations";
+        // Base 
+            @import "./base/base";
+        // Typografi
+            @import "./base/typography";
+        // Utilities
+            @import "./base/utilities";
+    
+    // Components 
+        // Buttons 
+            @import "./components/button";
+        // Form 
+            @import "./components/form";
+        // Navigation
+            @import "./components/navigation";
+        // Modal 
+            @import "./components/modal";
+        // Input 
+            @import "./components/input";
+    
+    // Layout 
+        // Header
+            @import "./layout/header";
+        // Main
+            @import "./layout/main";
+        // Loading 
+            @import "./layout/loading";
+        // Register 
+            @import "./layout/register";
+        
+
+    // Pages
+        // Home
+        @import "./pages/home";
+
+
+    // Bootstrap 
+        @import "../../node_modules/bootstrap/scss/bootstrap.scss";

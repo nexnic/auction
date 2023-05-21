@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tag -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="">
+    <!-- Title -->
+    <title>Herodotus | Home</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="./public/image/Herodotus-logo-white.png">
+    <!-- Script -->
+    <script src="./src/js/index.js" defer type="module"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./public/css/main.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/6b4917e13e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="navbar sticky-top navbar-light bg-primary p-3" id="nav__topbar">
+        
+    </nav>
+    <header>
+        
+    </header>
+    <main>
+        
+    </main>
+    <nav  class="navbar fixed-bottom navbar-light bg-primary p-3 justify-content-between" id="nav__botbar">
+        
+    </nav>
     
+        
+    <!-- Popup Model -->
+    <div class="modal fade" id="modal__Add" tabindex="-1" rola="dialog" aria-labelledby="settings" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="modal-profile-body">
+                    <h2>Register User</h2>
+                    <form action="" id="form__add">
+                        <div class="form-row">
+                            <div class="col-md-4">
+                                <label for="title" class="form-label">Title</label>
+                                <input type="text" name="title" id="form__add--title" placeholder="title" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="description" class="form-label">Description</label>
+                                <input type="text" name="description" id="form__add--description" placeholder="description">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="tags" class="form-label">Tags</label>
+                                <input type="text" name="tags" id="form__add--tags" placeholder="tags">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="media" class="form-label">Media URL</label>
+                                <input type="url" name="media" id="for__add--url" placeholder="URL Media">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="data">Select Date</label>
+                                <input type="datetime-local" name="date" id="form__add--data" required>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Add New post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal  fade" id="modal__setting" tabindex="-1" role="dialog" aria-labelledby="settings" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="modal-profile-body">
+                    <h2>Register User</h2>
+                    <form action="get" id="form__changeAvatar">
+                        <div class="form-row">
+                            <label for="url" class="form-label">url</label>
+                            <input type="url" class="form-control" id="form__changeAvatar--input" placeholder="URL" required>
+                        </div>
+                        <button type="submit" btn="btn" id="form__add-btn" value="Submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal  fade" id="modal__register" tabindex="-1" role="dialog" aria-labelledby="modal__register" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="modal-profile-body">
+                    <h2>Register User</h2>
+                    <form action="" id="form__register">
+                        <div class="form-row">
+                            <div class="col-md-4" id="form_regName">
+                                <label for="name" class="form-label"><i class="fa-solid fa-user"></i> FullName</label>
+                                <input type="name" class="form-control" id="form__register--username" placeholder="FullName" required>
+                            </div>
+                            <div class="col-md-4" id="form_regEmail">
+                                <label for="email" class="form-label"><i class="fa-solid fa-envelope"></i> Email</label>
+                                <input type="email" class="form-control" id="form__register--email" placeholder="email@domain.no" required>
+                            </div>
+                            <div class="col-md-4" id="form_regPwd">
+                                <label for="password" class="form-label"><i class="fa-solid fa-key"></i> password</label>
+                                <input type="password" class="form-control" id="form__register--password" placeholder="**********" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="avatar" class="form-label"><i class="fa-solid fa-image-portrait"></i> Profile Image</label>
+                                <input type="url" name="avatar" class="form-control" id="form__register--avatar" placeholder="Profile image">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="banner" class="form-label"><i class="fa-solid fa-image"></i> Banner</label>
+                                <input type="url" name="banner" class="form-control" id="form__register--banner" Placeholder="Image banner">
+                            </div>
+                        </div>
+                        <button type="submit" btn="btn">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer" id="modal-profile-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal  fade" id="modal__Login" tabindex="-1" role="dialog" aria-labelledby="modal__login" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="model-body p-3">
+                    <h2>Login using Herodotus ID</h2>
+                    <form action="" method="get" id="form__login">
+                        <div class="form-group">
+                            <label for="email" class="form-label"><i class="fa-solid fa-envelope"></i> Email</label>
+                            <input type="email" name="email" class="form-control form-control-lg" id="form__login--email" placeholder='email@domain.no' required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label"><i class="fa-solid fa-key"></i> Password</label>
+                            <input type="password" name="password" class="form-control form-control-lg" id="form__login--password" placeholder="*****">
+                        </div>
+                        <div class="pb-2">
+                            <small id="passwordHelpBlock" class="form-text text-muted">
+                                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                            </small>
+                        </div>
+                        <button type="submit" class="btn btn-small btn-secondary" id="loginBtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootsrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

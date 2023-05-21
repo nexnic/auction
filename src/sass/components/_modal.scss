@@ -1,0 +1,9 @@
+#modal {
+    padding: 3rem;
+    margin: 2rem;
+    box-shadow: $boxShadow-modal $boxShadow-color;
+    -webkit-box-shadow: $boxShadow-modal $boxShadow-color;
+    -moz-box-shadow: $boxShadow-modal $boxShadow-color;
+}
+
+$modal-content-bg: $primary;

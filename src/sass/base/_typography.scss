@@ -1,0 +1,36 @@
+// Font Poppins
+
+    // Import Font from file
+
+        // Blod 
+        @font-face {
+            font-family: 'poppis-blod';
+            src: url(../../../public/font/Poppins/Poppins-Bold.ttf) format('truetype');
+        }
+
+        // Poppis Medium
+        @font-face {
+            font-family: 'poppis-medium';
+            src: url(../../../public/font/Poppins/Poppins-Medium.ttf) format('truetype');
+        }
+
+        // Poppis Regular
+        @font-face {
+            font-family: 'poppis-regular';
+            src: url(../../../public/font/Poppins/Poppins-Regular.ttf) format('truetype');
+        }
+
+    // Heading
+
+    .headline {
+        &__main{ 
+            font-family: 'poppis-blod';
+            font-size: 2rem;
+        }
+        &__sub {
+            font-family: 'poppis-regular';
+            font-size: .6rem;
+        }
+    }
+    
+    // Paragraph

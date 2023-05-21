@@ -1,0 +1,19 @@
+#loading {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__box {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: $border-box-default;
+        border: black $border-solid-default solid;
+        box-shadow: $boxShadow-default rgba(0,0,0,0.75);
+        -webkit-box-shadow: $boxShadow-default rgba(0,0,0,0.75);
+        -moz-box-shadow: $boxShadow-default rgba(0,0,0,0.75);
+    }
+}

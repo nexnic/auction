@@ -40,4 +40,7 @@ a[data-toggle="collapse"] {
 
 #nav__botbar {
     display: flex;
+    box-shadow: -1px -17px 38px -15px rgba(0,0,0,0.67);
+    -webkit-box-shadow: -1px -17px 38px -15px rgba(0,0,0,0.67);
+    -moz-box-shadow: -1px -17px 38px -15px rgba(0,0,0,0.67);
 }

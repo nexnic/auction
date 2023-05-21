@@ -13,7 +13,7 @@ import { baseURL, endPoint_listings } from "../../data/base";
  * @returns 
  */
 export async function fetchAllProduct(){
-    const response = await fetch(baseURL+endPoint_listings, {
+    const response = await fetch(baseURL+endPoint_listings+'?_tag=my_tag&_active=true', {
         method: 'GET',
         headers: {
             'Content-type': 'application/json; charset=UFT-8'
